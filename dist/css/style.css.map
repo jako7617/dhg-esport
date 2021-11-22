@@ -1,11 +1,12 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AIAA,AAAA,GAAG,AAAC,CACA,WAAW,CAAE,SAAS,CACtB,KAAK,CAAE,OAAO,CACd,MAAM,CAAE,KAAK,CACb,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAC,GAAG,CACR,WAAW,CAAE,IAAI,CACjB,GAAG,CAAE,KAAK,CACX,AAEH,AAAA,cAAc,AAAC,CAEX,SAAS,CAAC,MAAM,CAChB,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,OAAO,CAEjB,AAED,AAAA,aAAa,AAAC,CACV,OAAO,CAAE,iBAAiB,CAC7B,AAED,AAAA,aAAa,AAAC,CACV,SAAS,CAAE,MAAM,CACjB,KAAK,CAAE,OAAO,CACd,OAAO,CAAE,kBAAkB,CAC3B,MAAM,CAAE,KAAK,CAChB,AAED,AAAA,YAAY,AAAC,CACT,OAAO,CAAE,eAAe,CAC3B",
     "sources": [
         "../../app/scss/style.scss",
         "../../app/scss/_variables.scss",
         "../../app/scss/_mixins.scss",
-        "../../app/scss/_globals.scss"
+        "../../app/scss/_globals.scss",
+        "../../app/scss/_frontpage-mid.scss"
     ],
     "names": [],
     "file": "style.css"
