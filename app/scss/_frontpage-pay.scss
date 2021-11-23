@@ -1,4 +1,5 @@
 .card1 {
+<<<<<<< Updated upstream
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 25px;
@@ -7,15 +8,36 @@
   }
   &__picture {
     width: 98%;
+=======
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 25px;
+    
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+         
+    }
+    &__picture {
+        width: 98%;
+>>>>>>> Stashed changes
     border-radius: 25px 25px 0 0;
   }
 
+<<<<<<< Updated upstream
   &__container {
     padding: 20px 50px;
     font-size: $font-sm;
     font-size: $font-sm-fallback;
     font-weight: 700;
   }
+=======
+    &__container {
+        padding: 20px 50px;
+        font-size: $font-sm;
+        font-size: $font-sm-fallback;font-weight: 700;
+        border: 2px solid black;
+    }
+>>>>>>> Stashed changes
 
   ul li {
     margin-bottom: 20px;
