@@ -1,3 +1,16 @@
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0px 0px 0px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+*/
 .vl {
     border-left: 6px solid;
     color: #161B91;
@@ -43,16 +56,20 @@
     width: 100%;
 }
 
+.fp-map-small {
+    display: none;
+}
+
 /*#map {
     height: 200px;
     width: 100%;
 }*/
 
-@media only screen and (min-width: 766px){
+@media only screen and (min-width: 768px){
 
-    .gridcontainer-fp-mid {
-        display: grid;
-        grid: 300px / auto;
+    .flexbox-fp-mid {
+        display: flex;
+        
     }
 
     .vl {
@@ -91,6 +108,7 @@
     
     .fp-info-mailing {
         padding: 5px 12px 5px 12px;
+        font-size: 1.2rem;
     }
     
     .fp-logo-info {
@@ -98,13 +116,79 @@
     }
     
     .fp-map {
-        width: 100%;
+        width: 50%;
+    }
+
+    .fp-map-small {
+        display: none;
     }
 
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1024px){
 
+    .linebreak-fp-mid {
+        display: none;
+    }
 
+    .flexbox-fp-mid {
+        display: flex;
+        
+    }
 
+    .vl {
+        display: none;
+
+      }
+    
+    .fp-title-info {
+    
+        font-size:2.5rem;
+        text-align: center;
+        color: #161B91;
+    
+    }
+    
+    .fp-text-info {
+        padding: 5px 12px 5px 12px;
+        font-size: 1.2rem;
+    }
+    
+    .fp-gametitle {
+        font-size: 1.5rem;
+        color: #161B91;
+        padding: 10px 100px 0 115px;
+        margin: -15px;
+    }
+    
+    .fp-gameinfo {
+        padding: 0 100px 0 100px;
+    }
+    
+    .flexbox2-fp-mid {
+        display: flex;
+    }
+
+    .fp-info-mailing {
+        padding: 5px 12px 5px 12px;
+        font-size: 1.2rem;
+        display: flex;
+        width: 70%;
+    }
+    
+    .fp-logo-info {
+        width: 30%;
+        display: flex;
+        border-radius: round($number: 50px);
+    }
+    
+    .fp-map {
+        display: none;
+    }
+
+    .fp-map-small {
+        border-radius: round($number: 50px);
+        width: 100%;
+    }
+    
 }
