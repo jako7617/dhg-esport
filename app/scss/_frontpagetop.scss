@@ -83,3 +83,49 @@
   color: white;
 }
 /* knapper slut */
+
+@media only screen and (min-width: 1000px) {
+  
+  .bannerlogo {
+    margin-top: -8;
+    margin-left: -8;
+    height: 40rem;
+    width: 100.85%;
+}
+
+.banner h2 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $clr-white;
+  font-size: 4rem;
+}
+
+.logo2 {
+  z-index: 1;
+  width: clamp(10%, 5rem, 5rem);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.medlembutton{
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 18rem;
+
+}
+
+.instructorbutton {
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 18rem;
+}
+
+
+
+}
