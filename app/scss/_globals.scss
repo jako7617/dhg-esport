@@ -1,7 +1,9 @@
 @viewport {
   orientation: portrait;
 }
-
+body {
+  height: 100%;
+}
 *,
 *::before,
 *::after {

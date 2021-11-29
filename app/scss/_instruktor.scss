@@ -4,15 +4,19 @@
   grid-template-rows: auto;
   &__container {
     margin: 0 auto;
+    text-align: center;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    display: grid;
     &__pic {
       position: absolute;
-      background-image: url(../../images/instruktor1.jpg);
+      background-image: url("./../images/instruktor1.jpg");
       background-position: center;
       width: 2rem;
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 1rem;
-      display: block;
     }
   }
 }
