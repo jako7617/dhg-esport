@@ -5,8 +5,14 @@
   &__container {
     margin: 0 auto;
     &__pic {
-      width: 90vw;
-      margin: 0 auto;
+      position: absolute;
+      background-image: url(../../images/instruktor1.jpg);
+      background-position: center;
+      width: 2rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 1rem;
+      display: block;
     }
   }
 }
