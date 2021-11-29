@@ -56,9 +56,6 @@
     width: 100%;
 }
 
-.fp-map-small {
-    display: none;
-}
 
 /*#map {
     height: 200px;
@@ -119,9 +116,6 @@
         width: 50%;
     }
 
-    .fp-map-small {
-        display: none;
-    }
 
 }
 
@@ -183,12 +177,11 @@
     }
     
     .fp-map {
-        display: none;
+        display: flex;
+        height: 400px;
+        width: 40%;
+        border-radius: round($number: 50px);
     }
 
-    .fp-map-small {
-        border-radius: round($number: 50px);
-        width: 100%;
-    }
     
 }
