@@ -1,0 +1,12 @@
+.instruct-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  &__container {
+    margin: 0 auto;
+    &__pic {
+      width: 90vw;
+      margin: 0 auto;
+    }
+  }
+}
