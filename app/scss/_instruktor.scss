@@ -2,21 +2,116 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+
   &__container {
-    margin: 0 auto;
+    margin: 5% auto;
     text-align: center;
     border-radius: 2rem;
-    position: relative;
-    overflow: hidden;
     display: grid;
+    width: 75%;
+    h2 {
+      text-align: center;
+    }
+
     &__pic {
-      position: absolute;
-      background-image: url("./../images/instruktor1.jpg");
-      background-position: center;
-      width: 2rem;
-      background-repeat: no-repeat;
+      width: 12rem;
       background-size: cover;
       border-radius: 1rem;
+      margin: 10px auto;
+    }
+    p {
+      text-align: center;
+      font-family: Ironstrike, sans-serif;
+      color: $clr-dark-blue;
+    }
+    &__text {
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.3;
+      margin-top: 10px;
     }
   }
+}
+.instruct-line {
+  width: clamp(60%, 90%, 95%);
+  height: 15%;
+  background-color: $clr-dark-blue;
+  border: 0;
+  border-radius: 10px;
+}
+
+.instruct-header2 {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    font-size: 22px;
+  }
+  p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 15px 0;
+  }
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-shadow: 5px 10px #888888;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: $clr-dark-blue;
+  color: white;
+  padding: 3% 30%;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  margin: 5% auto;
+  font-family: Ironstrike, sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: $clr-light-purple;
+}
+
+.contact-container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
