@@ -4,22 +4,23 @@
     background-color: black;
     opacity: 80%;
     width: 100%;
-    height: 4rem;
+    height: 4.2rem;
     position: absolute;
     z-index: 100;
     margin-left: -8;
     margin-top: -8;
 }
 
-.nav-linksbar {
+.linksbar {
   display: none;
 }
 
 .dhglogo {
     z-index: 1;
-    width: clamp(10%, 5rem, 5rem);
+    width: clamp(5%, 4rem, 5rem);
     display: flex;
     margin: 0 auto;
+    padding-top: 0.60rem;
   }
 
  
@@ -33,7 +34,7 @@
   .navbar {
     width: 18.75rem;
     height: 100%;
-    background-color: $clr-grey;
+    background-color: $clr-off-black;
     opacity: 80%;
     position: fixed;
     top: 0;
@@ -42,6 +43,7 @@
     align-items: center;
     transition: left .8s cubic-bezier(1, 0, 0, 1);
   }
+
   
   .change{
     left: 0;
@@ -51,8 +53,8 @@
     width: 2.188rem;
     height: 1.875rem;
     position: fixed;
-    top: 1.25rem;
-    left: 1.875rem;
+    top: 0.85rem;
+    left: 1.25rem;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -126,30 +128,47 @@
   }
 
 
-  /* webquery */
-  @media only screen and (min-width: 1024px) {
+  /* webquery tablet */
+  @media screen and (min-width: 768px){
+    .linksbar {
+      display: none;
+    }
+
+    .navcolor {
+      width: 100%;
+    }
+  }
+
+
+
+
+  /* webquery pc*/
+  @media screen and (min-width: 1024px) {
     
     .navcolor {
       display: block;
       background-color: black;
       opacity: 80%;
-      width: 100%;
+      width: 100.4%;
       height: 7rem;
       position: absolute;
       z-index: 1;
       margin-left: -8;
       margin-top: -8;
+      
   }
 
   .linksbar {
+    top: 1.5rem;
+    left: 20rem;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 1rem 15rem;
     cursor: pointer;
     display: flex;
     z-index: 9;
     position: absolute;
-    width: 100%;
     justify-content: space-around;
+    
   }
   .linksbar li {
     list-style: none;
@@ -158,53 +177,34 @@
   .linksbar a {
     color: $clr-white;
     opacity: 100%;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
     text-decoration: none;
+    z-index: 1;
   }
 
-  .linksbar li a {
-    position:relative;
-  z-index: 1;
+  .linksbar .hlink:hover {
+    background-color: $clr-dark-blue;
   }
 
-  .linksbar li a:hover {
-    color: $clr-white;
+  .current {
+    background-color: $clr-dark-blue;
+
   }
 
-  .linksbar li a::after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 1px;
-    content: '.';
-    color: transparent;
-    background: $clr-dark-blue;
-    visibility: none;
-    opacity: 0;
-    z-index: -1;
-    
-  }
-
-  .linksbar li a:hover::after {
-    opacity: 1;
-    visibility: visible;
-    height: 100%;
+  .linksbar {
+    font-size: 1rem;
   }
 
 
 
-
-
-  
     .burgerbox {
       display: none;
     }
 
     .dhglogo {
+      padding-left: 2rem;
       z-index: 1;
       width: clamp(5%, 5rem, 5rem);
       display: flex;

@@ -1,8 +1,8 @@
 .bannerlogo {
     margin-top: -8;
     margin-left: -8;
-    height: 40rem;
-    width: 104.5%;
+    height: 30rem;
+    width: 100%;
 }
 
 .logo2 {
@@ -12,6 +12,10 @@
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.banner {
+  width: 100%;
 }
 
 .banner h2 {
@@ -84,13 +88,23 @@
 }
 /* knapper slut */
 
-@media only screen and (min-width: 1000px) {
+
+@media screen and (min-width: 768px) {
+
+  
+  
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
   
   .bannerlogo {
     margin-top: -8;
     margin-left: -8;
     height: 40rem;
-    width: 100.85%;
+    width: 100.4%;
 }
 
 .banner h2 {
@@ -99,7 +113,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: $clr-white;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .logo2 {
