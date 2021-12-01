@@ -1,11 +1,12 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AIAA,AAAA,MAAM,AAAC,CACH,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,KAAK,CHcO,OAAO,CGbtB",
     "sources": [
         "../../app/scss/style.scss",
         "../../app/scss/_variables.scss",
         "../../app/scss/_mixins.scss",
-        "../../app/scss/_globals.scss"
+        "../../app/scss/_globals.scss",
+        "../../app/scss/_omos.scss"
     ],
     "names": [],
     "file": "style.css"
