@@ -1,5 +1,44 @@
-.intro {
-    display: flex;
+.intro h2 {
+    font-size: 30px;
+    padding: 1rem 2.5rem;
+    margin-left: 0.5rem;
+    display: inline-block;
     align-items: center;
-    color: $clr-tory-blue;
+    color: #161B91;
+}
+.intro p {
+    line-height: 1.5rem;
+    font-size: $font-sm-fallback;
+    margin: 1rem 3rem;
+    display: inline-block;
+    text-align: left;
+    
+}
+
+.kontakt h2 {
+    margin-top: 2rem;
+    font-size: 30px;
+    padding: 1rem 5rem;
+    display: inline-block;
+    align-items: center;
+    color: #161B91;
+}
+
+.kontakt p {
+    line-height: 1.5rem;
+    font-size: $font-sm-fallback;
+    margin: 1rem 3rem;
+    display: inline-block;
+    text-align: left;
+}
+
+img {
+    padding: 1rem 4rem;
+    width: 70%;
+    border-radius: 2rem;
+}
+
+.omoskontakt {
+    border-radius: 4px;
+    color: #161B91;
 }
