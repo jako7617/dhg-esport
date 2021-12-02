@@ -39,6 +39,29 @@ img {
 }
 
 .omoskontakt {
-    border-radius: 4px;
-    color: #161B91;
-}
+    border: none;
+    color: $clr-dark-blue;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin: -0.375rem -0.125rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  .omoskontakt {
+    background-color: $clr-dark-blue; 
+    border-radius: 1rem;
+    color: white; 
+    width: 14rem;
+  }
+  .omoskontakt:hover {
+    background-color: $clr-dark-blue;
+    color: white;
+  }
