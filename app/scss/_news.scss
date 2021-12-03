@@ -92,14 +92,14 @@ font-weight: bold;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
         grid-template-areas: 
-        "content1" "content1" 
-        "content2" "content3" 
-        "content4" "content4"
-        "content5" "content6" 
-        "content7" "content7"
-        "content8" "content9" 
-        "content10" "content10"
-        "content11" "content12";
+        "content1 content1" 
+        "content2 content3" 
+        "content4 content4"
+        "content5 content6" 
+        "content7 content7"
+        "content8 content9" 
+        "content10 content10"
+        "content11 content12";
         grid-gap: 1rem;
         text-align: center;
     }
