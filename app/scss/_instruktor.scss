@@ -188,7 +188,7 @@ input[type="submit"]:hover {
   }
 }
 .maps {
-  width: 100vw;
+  width: 70vw;
   margin-bottom: 2rem;
 }
 
@@ -285,16 +285,18 @@ input[type="submit"]:hover {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     grid-gap: 3rem;
-    width: 70vw;
+    width: 65vw;
     margin-bottom: 3rem;
 
     &__text {
       p {
         margin-bottom: 1rem;
+        text-align: left;
       }
       h2 {
         margin-top: 0.5rem;
         font-size: 2.4rem;
+        text-align: left;
       }
       &__bread {
         text-align: left;
@@ -309,7 +311,7 @@ input[type="submit"]:hover {
     grid-template-columns: 2fr 1fr;
     align-items: center;
     grid-gap: 3rem;
-    width: 70vw;
+    width: 65vw;
     margin-bottom: 3rem;
 
     &__container {
@@ -334,11 +336,13 @@ input[type="submit"]:hover {
       h2 {
         margin-top: 0.5rem;
         font-size: 2.4rem;
+        text-align: left;
       }
       p {
         font-family: Ironstrike, sans-serif;
         color: $clr-dark-blue;
         margin-bottom: 1rem;
+        text-align: left;
       }
       &__bread {
         text-align: left;
@@ -352,11 +356,24 @@ input[type="submit"]:hover {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     grid-gap: 3rem;
-    width: 70vw;
+    width: 65vw;
     margin-bottom: 3rem;
 
     &__container {
       height: 25vh;
     }
+  }
+  .instruct-header2 {
+    width: 65vw;
+  }
+
+  .contact-bottom {
+    display: grid;
+    grid-template-columns: 32.5% 32.5%;
+
+    justify-content: center;
+  }
+  .maps {
+    width: 25vw;
   }
 }
