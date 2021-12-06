@@ -1,0 +1,379 @@
+.instruct-header {
+  margin-bottom: 1.5rem;
+}
+
+.instruct-wrapper1 {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+
+  &__container {
+    height: 30vh;
+    &__bg {
+      background-image: url(../../images/instruktor1.jpg);
+      background-position: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+  &__text {
+    text-align: center;
+    h2 {
+      margin-top: 0.5rem;
+    }
+    p {
+      font-family: Ironstrike, sans-serif;
+      color: $clr-dark-blue;
+    }
+    &__bread {
+      text-align: left;
+      font-size: $font-sm;
+      line-height: 1.3;
+      margin: 0 0 1.5rem 0;
+    }
+  }
+}
+
+.instruct-wrapper2 {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+
+  &__container {
+    height: 30vh;
+    &__bg {
+      background-image: url(../../images/instruktor2.jpg);
+      background-position: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+  &__text {
+    text-align: center;
+    h2 {
+      margin-top: 0.5rem;
+      font-size: 2.4rem;
+    }
+    p {
+      font-family: Ironstrike, sans-serif;
+      color: $clr-dark-blue;
+      margin-bottom: 1rem;
+    }
+    &__bread {
+      text-align: left;
+      font-size: $font-sm;
+      line-height: 1.3;
+      margin: 0 0 1.5rem 0;
+    }
+  }
+}
+
+.instruct-wrapper3 {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+
+  &__container {
+    height: 30vh;
+    &__bg {
+      background-image: url(../../images/instruktor3.jpg);
+      background-position: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+}
+
+.divider {
+  background-color: $clr-dark-blue;
+  width: clamp(60%, 70%, 75%);
+  margin-bottom: 1.7rem;
+  border: 1px solid $clr-dark-blue;
+  border-radius: 15px;
+}
+
+.instruct-header2 {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+  p {
+    text-align: left;
+    font-size: $font-sm;
+    line-height: 1.3;
+    margin: 15px 0;
+  }
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+  resize: vertical;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: $clr-dark-blue;
+  color: white;
+  padding: 3% 30%;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  margin: 5% auto;
+  font-family: Ironstrike, sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: $clr-light-purple;
+}
+
+.contact-container {
+  border-radius: 5px;
+  padding: 10px 50px;
+}
+
+.col-25 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  width: 90%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.instruct-contactinfo {
+  width: 75%;
+  margin: 0 auto;
+  p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 20px 0;
+  }
+}
+.maps {
+  width: 70vw;
+  margin-bottom: 2rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .instruct-wrapper1 {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    grid-gap: 3rem;
+    width: 80vw;
+    margin-bottom: 3rem;
+    &__container {
+      height: 25vh;
+
+      &__text {
+        p {
+          font-family: Ironstrike, sans-serif;
+          color: $clr-dark-blue;
+          margin-bottom: 1rem;
+        }
+        h2 {
+          margin-top: 0.5rem;
+          font-size: 2.4rem;
+        }
+        &__bread {
+          text-align: left;
+          font-size: 1.5rem;
+          line-height: 1.3;
+          margin: 0 0 1.5rem 0;
+        }
+      }
+    }
+  }
+
+  .instruct-wrapper2 {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    grid-gap: 3rem;
+    width: 80vw;
+    margin-bottom: 3rem;
+
+    &__container {
+      height: 25vh;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      &__bg {
+        background-image: url(../../images/instruktor2.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        border-radius: 15px;
+      }
+
+      &__text {
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        h2 {
+          margin-top: 0.5rem;
+          font-size: 2.4rem;
+        }
+        p {
+          font-family: Ironstrike, sans-serif;
+          color: $clr-dark-blue;
+          margin-bottom: 1rem;
+        }
+        &__bread {
+          text-align: left;
+          font-size: 1.5rem;
+          line-height: 1.3;
+          margin: 0 0 1.5rem 0;
+        }
+      }
+    }
+  }
+
+  .instruct-wrapper3 {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    grid-gap: 3rem;
+    width: 80vw;
+    margin-bottom: 3rem;
+
+    &__container {
+      height: 25vh;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .instruct-wrapper1 {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    grid-gap: 3rem;
+    width: 65vw;
+    margin-bottom: 3rem;
+
+    &__text {
+      p {
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+      h2 {
+        margin-top: 0.5rem;
+        font-size: 2.4rem;
+        text-align: left;
+      }
+      &__bread {
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin: 0 0 1.5rem 0;
+      }
+    }
+  }
+
+  .instruct-wrapper2 {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    grid-gap: 3rem;
+    width: 65vw;
+    margin-bottom: 3rem;
+
+    &__container {
+      height: 25vh;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      &__bg {
+        background-image: url(../../images/instruktor2.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        border-radius: 15px;
+      }
+    }
+
+    &__text {
+      text-align: center;
+      grid-column: 1/2;
+      grid-row: 1/2;
+
+      h2 {
+        margin-top: 0.5rem;
+        font-size: 2.4rem;
+        text-align: left;
+      }
+      p {
+        font-family: Ironstrike, sans-serif;
+        color: $clr-dark-blue;
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+      &__bread {
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin: 0 0 1.5rem 0;
+      }
+    }
+  }
+  .instruct-wrapper3 {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    grid-gap: 3rem;
+    width: 65vw;
+    margin-bottom: 3rem;
+
+    &__container {
+      height: 25vh;
+    }
+  }
+  .instruct-header2 {
+    width: 65vw;
+  }
+
+  .contact-bottom {
+    display: grid;
+    grid-template-columns: 32.5% 32.5%;
+
+    justify-content: center;
+  }
+  .maps {
+    width: 25vw;
+  }
+}
