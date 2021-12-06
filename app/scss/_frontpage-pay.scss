@@ -1,0 +1,285 @@
+/*
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  &__picture {
+    width: 98%;
+    border-radius: 25px 25px 0 0;
+  }
+
+  &__container {
+    padding: 20px 50px;
+    font-size: $font-sm;
+    font-size: $font-sm-fallback;
+    font-weight: 700;
+    border: 2px solid black;
+
+    &__monthly {
+      text-align: right;
+      font-size: 3rem;
+      margin-top: -2.5rem;
+      font-family: ironstrike, sans-serif;
+      width: 18rem;
+    }
+  }
+
+  ul li {
+    margin-bottom: 20px;
+  }
+  &__price,
+  &__kr {
+    font-size: 72px;
+    color: $clr-dark-blue;
+    font-family: ironstrike, sans-serif;
+    line-height: 1.2;
+  }
+  &__kr {
+    font-size: 42px;
+  }
+
+  &__priceContainer {
+    text-align: center;
+  }
+}
+.medlembutton {
+  padding: 1.5rem 7rem;
+  text-align: center;
+  border: none;
+  font-size: $font-sm;
+  font-weight: 700;
+  border-radius: 30px;
+  background-color: $clr-dark-blue;
+  color: $clr-white;
+  font-family: Ironstrike, sans-serif;
+  white-space: nowrap;
+}
+*/
+
+.wrapper-grid-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-gap: 2rem;
+  margin: 2rem;
+
+  &__container {
+    box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 2fr;
+
+    &__banner-img {
+      position: absolute;
+      background-image: url(../../images/minecraft-resized.jpg);
+      height: 10rem;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 2rem 2rem 0 0;
+    }
+
+    &__banner-img2 {
+      position: absolute;
+      background-image: url(../../images/csgo-cover.png);
+      height: 10rem;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 2rem 2rem 0 0;
+    }
+    &__banner-img3 {
+      position: absolute;
+      background-image: url(../../images/fortnite-cover.jpg);
+      height: 10rem;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 2rem 2rem 0 0;
+    }
+    &__list {
+      margin: 12rem 0 0 0;
+      font-size: 2rem;
+      font-family: Inter, sans-serif;
+      text-align: left;
+      padding: 0 0 0 5rem;
+      font-weight: 700;
+      li {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    &__price {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+      h2 {
+        font-size: 72px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 42px;
+        font-weight: 700;
+        margin-top: -0.5rem;
+        color: $clr-dark-blue;
+        font-family: Ironstrike, sans-serif;
+      }
+    }
+
+    &__monthly {
+      font-size: 3rem;
+      text-align: center;
+      margin: -1rem 0 2rem 0;
+      font-family: ironstrike, sans-serif;
+      font-weight: 700;
+    }
+    &__button {
+      padding: 1.2rem 7rem;
+      text-align: center;
+      border: none;
+      font-size: $font-sm;
+      font-weight: 700;
+      border-radius: 30px;
+      background-color: $clr-dark-blue;
+      color: $clr-white;
+      font-family: Ironstrike, sans-serif;
+      white-space: nowrap;
+      margin: 0 auto 3rem auto;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+footer {
+  background-color: $clr-light-purple;
+  color: white;
+
+  h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+}
+
+.footer-left {
+  text-align: center;
+  h3 {
+    padding-top: 4rem;
+  }
+  &__logo {
+    width: 15rem;
+    margin: 1.5rem 0;
+  }
+
+  &__socials {
+    text-align: center;
+
+    img {
+      width: 4rem;
+      margin: 2rem 1rem;
+    }
+  }
+}
+
+.footer-right {
+  text-align: center;
+  list-style: none;
+
+  ul {
+    font-size: 16px;
+    text-align: left;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    list-style: none;
+    margin-left: -90px;
+
+    li {
+      margin-bottom: 13px;
+      list-style: none;
+    }
+  }
+}
+.footer-bottom {
+  text-align: center;
+  padding: 4rem 0;
+}
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .wrapper-grid-card {
+    grid-template-columns: repeat(3, 1fr);
+    &__container {
+      &__price {
+        h2 {
+          font-size: 52px;
+        }
+
+        p {
+          font-size: 32px;
+          font-weight: 700;
+          margin-top: -0.5rem;
+          color: $clr-dark-blue;
+          font-family: Ironstrike, sans-serif;
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 48px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    h3 {
+      padding-top: 4rem;
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper-grid-card {
+    grid-template-columns: repeat(3, 1fr);
+
+    &__container {
+      width: 90%;
+      margin: 0 auto;
+      &__price {
+        h2 {
+          font-size: 72px;
+        }
+
+        p {
+          font-size: 42px;
+          font-weight: 700;
+          margin-top: -0.5rem;
+          color: $clr-dark-blue;
+          font-family: Ironstrike, sans-serif;
+        }
+      }
+    }
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-bottom {
+    grid-column: 1/4;
+  }
+}
