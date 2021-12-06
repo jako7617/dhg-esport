@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ppx2xnh.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="flex flex-jc-c">KONTAKT OS!</h2>
+    <div class="contact-container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Fornavn</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Dit navn.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Email</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Din email.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Besked</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Skriv din besked.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="SEND" />
+        </div>
+      </form>
+    </div>
+
+    <div class="instruct-contactinfo">
+      <h2 class="flex flex-jc-c">Kontaktinformationer</h2>
+      <p>
+        Email: Seniorformand@dhg.dk
+
+        <br /><br />
+        Adresse: Dalumskolen Demantsvej 30,<br />
+        5260 Odense S
+      </p>
+    </div>
+    <img class="maps" src="images/mapsdhg.png" alt="Maps til Dalumskolen" />
+  </body>
+</html>
