@@ -60,6 +60,11 @@
 }
 */
 
+.pay-title {
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
 .wrapper-grid-card {
   display: grid;
   grid-template-columns: 1fr;
@@ -256,8 +261,15 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  .pay-title {
+    margin-bottom: 4rem;
+    font-size: 5rem;
+  }
+
   .wrapper-grid-card {
     grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: 4rem auto;
 
     &__container {
       width: 90%;
