@@ -12,52 +12,47 @@
   }
 */
 .vl {
-    border-left: 6px solid;
-    color: #161B91;
-    height: 210px;
-    position: absolute;
-    left:15%;
-    margin-left: -3px;
-    top: 300px;
-  }
+  border-left: 6px solid;
+  color: #161b91;
+  height: 210px;
+  position: absolute;
+  left: 15%;
+  margin-left: -3px;
+}
 
 .fp-title-info {
-
-    font-size:1.5rem;
-    text-align: center;
-    color: #161B91;
-
+  font-size: 1.5rem;
+  text-align: center;
+  color: #161b91;
 }
 
 .fp-text-info {
-    padding: 5px 12px 5px 12px;
+  padding: 5px 12px 5px 12px;
 }
 
 .fp-gametitle {
-    font-size: 1.5rem;
-    color: #161B91;
-    padding: 10px 100px 0 115px;
-    margin: -15px;
+  font-size: 1.5rem;
+  color: #161b91;
 }
 
 .fp-gameinfo {
-    padding: 0 100px 0 100px;
+  padding: 0 100px 0 100px;
 }
 
 .fp-info-mailing {
-    padding: 5px 12px 5px 12px;
+  padding: 5px 12px 5px 12px;
 }
 
 .fp-logo-info {
-    width: 100%;
+  width: 100%;
 }
 
 .fp-map {
-    width: 100%;
+  width: 100%;
 }
 
 .fp-map-small {
-    display: none;
+  display: none;
 }
 
 /*#map {
@@ -65,131 +60,119 @@
     width: 100%;
 }*/
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
+  .flexbox-fp-mid {
+    display: flex;
+  }
 
-    .flexbox-fp-mid {
-        display: flex;
-        
-    }
+  .vl {
+    border-left: 8px solid;
+    color: #161b91;
+    height: 210px;
+    position: absolute;
+    left: 7%;
+    margin-left: -3px;
+  }
 
-    .vl {
-        border-left: 8px solid;
-        color: #161B91;
-        height: 210px;
-        position: absolute;
-        left:7%;
-        margin-left: -3px;
-        top: 340px;
-      }
-    
-    .fp-title-info {
-    
-        font-size:2.5rem;
-        text-align: center;
-        color: #161B91;
-    
-    }
-    
-    .fp-text-info {
-        padding: 5px 12px 5px 12px;
-        font-size: 1.2rem;
-    }
-    
-    .fp-gametitle {
-        font-size: 1.5rem;
-        color: #161B91;
-        padding: 10px 100px 0 115px;
-        margin: -15px;
-    }
-    
-    .fp-gameinfo {
-        padding: 0 100px 0 100px;
-    }
-    
-    .fp-info-mailing {
-        padding: 5px 12px 5px 12px;
-        font-size: 1.2rem;
-    }
-    
-    .fp-logo-info {
-        width: 100%;
-    }
-    
-    .fp-map {
-        width: 50%;
-    }
+  .fp-title-info {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #161b91;
+  }
 
-    .fp-map-small {
-        display: none;
-    }
+  .fp-text-info {
+    padding: 5px 12px 5px 12px;
+    font-size: 1.2rem;
+  }
 
+  .fp-gametitle {
+    font-size: 1.5rem;
+    color: #161b91;
+    padding: 10px 100px 0 115px;
+    margin: -15px;
+  }
+
+  .fp-gameinfo {
+    padding: 0 100px 0 100px;
+  }
+
+  .fp-info-mailing {
+    padding: 5px 12px 5px 12px;
+    font-size: 1.2rem;
+  }
+
+  .fp-logo-info {
+    width: 100%;
+  }
+
+  .fp-map {
+    width: 50%;
+  }
+
+  .fp-map-small {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
+  .linebreak-fp-mid {
+    display: none;
+  }
 
-    .linebreak-fp-mid {
-        display: none;
-    }
+  .flexbox-fp-mid {
+    display: flex;
+  }
 
-    .flexbox-fp-mid {
-        display: flex;
-        
-    }
+  .vl {
+    display: none;
+  }
 
-    .vl {
-        display: none;
+  .fp-title-info {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #161b91;
+  }
 
-      }
-    
-    .fp-title-info {
-    
-        font-size:2.5rem;
-        text-align: center;
-        color: #161B91;
-    
-    }
-    
-    .fp-text-info {
-        padding: 5px 12px 5px 12px;
-        font-size: 1.2rem;
-    }
-    
-    .fp-gametitle {
-        font-size: 1.5rem;
-        color: #161B91;
-        padding: 10px 100px 0 115px;
-        margin: -15px;
-    }
-    
-    .fp-gameinfo {
-        padding: 0 100px 0 100px;
-    }
-    
-    .flexbox2-fp-mid {
-        display: flex;
-    }
+  .fp-text-info {
+    padding: 5px 12px 5px 12px;
+    font-size: 1.2rem;
+  }
 
-    .fp-info-mailing {
-        padding: 5px 12px 5px 12px;
-        font-size: 1.2rem;
-        display: flex;
-        width: 70%;
-    }
-    
-    .fp-logo-info {
-        width: 30%;
-        display: flex;
-        border-radius: round($number: 50px);
-    }
-    
-    .fp-map-small {
-        display: flex;
-        height: 400px;
-        border-radius: round($number: 50px);
-    }
+  .fp-gametitle {
+    font-size: 1.5rem;
+    color: #161b91;
+    padding: 10px 100px 0 115px;
+    margin: -15px;
+  }
 
-    .fp-map {
-        display: none;
-    }
-    
+  .fp-gameinfo {
+    padding: 0 100px 0 100px;
+  }
+
+  .flexbox2-fp-mid {
+    display: flex;
+  }
+
+  .fp-info-mailing {
+    padding: 5px 12px 5px 12px;
+    font-size: 1.2rem;
+    display: flex;
+    width: 70%;
+  }
+
+  .fp-logo-info {
+    width: 30%;
+    display: flex;
+    border-radius: round($number: 50px);
+  }
+
+  .fp-map-small {
+    display: flex;
+    height: 400px;
+    border-radius: round($number: 50px);
+  }
+
+  .fp-map {
+    display: none;
+  }
 }

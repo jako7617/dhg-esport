@@ -164,7 +164,6 @@
 footer {
   background-color: $clr-light-purple;
   color: white;
-  font-size: 3929px;
 
   h3 {
     font-size: 28px;
@@ -185,7 +184,9 @@ footer {
 
   &__socials {
     text-align: center;
-
+    a {
+      height: 10rem;
+    }
     img {
       width: 4rem;
       margin: 2rem 1rem;
@@ -219,7 +220,7 @@ footer {
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
   .wrapper-grid-card {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     &__container {
       &__price {
         h2 {
@@ -256,7 +257,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .wrapper-grid-card {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
 
     &__container {
       width: 90%;

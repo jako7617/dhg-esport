@@ -2,12 +2,11 @@
   display: block;
   background-color: black;
   opacity: 80%;
-  width: 100%;
-  height: 4.5rem;
+  height: 6rem;
   position: absolute;
   z-index: 100;
-  margin-left: -8;
-  margin-top: -8;
+  margin-left: -8px;
+  margin-top: -8px;
 }
 
 .linksbar {
@@ -15,8 +14,7 @@
 }
 
 .dhglogo {
-  z-index: 1;
-  width: clamp(5%, 4rem, 5rem);
+  width: clamp(1%, 5.5rem, 7rem);
   display: flex;
   margin: 0 auto;
   padding-top: 1.1rem;
@@ -33,7 +31,6 @@
   width: 18.75rem;
   height: 100%;
   background-color: $clr-off-black;
-  opacity: 80%;
   position: fixed;
   top: 0;
   left: -18.75rem;
@@ -47,8 +44,8 @@
 }
 
 .burgermenu {
-  width: 2.188rem;
-  height: 1.875rem;
+  width: 3.188rem;
+  height: 2.875rem;
   position: fixed;
   top: 0.85rem;
   left: 1.25rem;
@@ -60,13 +57,13 @@
 
 .linje {
   width: 100%;
-  height: 0.188rem;
+  height: 0.288rem;
   background-color: $clr-white;
   transition: all 0.8s;
 }
 
 .change .linje-1 {
-  transform: rotateZ(-405deg) translate(-0.5rem, 0.375rem);
+  transform: rotateZ(-405deg) translate(-0.5rem, 0.875rem);
 }
 
 .change .linje-2 {
@@ -74,7 +71,7 @@
 }
 
 .change .linje-3 {
-  transform: rotateZ(405deg) translate(-0.5rem, -0.375rem);
+  transform: rotateZ(405deg) translate(-0.5rem, -0.875rem);
 }
 
 .nav-list {
@@ -129,39 +126,35 @@
   .linksbar {
     display: none;
   }
-
-  .navcolor {
-    width: 100%;
-  }
 }
 
 /* webquery pc*/
 @media screen and (min-width: 1024px) {
   .navcolor {
-    display: block;
     background-color: black;
     opacity: 80%;
     width: 100.4%;
     height: 7rem;
     position: absolute;
-    z-index: 1;
-    margin-left: -8;
-    margin-top: -8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .linksbar {
-    top: 1.5rem;
-    left: 20rem;
     text-align: center;
-    padding: 1rem 15rem;
+    padding: 0 3rem;
     cursor: pointer;
     display: flex;
-    z-index: 9;
-    position: absolute;
     justify-content: space-around;
+    margin: 0 auto;
   }
   .linksbar li {
     list-style: none;
+    font-size: $font-sm;
+    font-family: Ironstrike, sans-serif;
+    font-weight: 700;
+    padding: 0 2.5rem;
   }
 
   .linksbar a {
@@ -191,13 +184,7 @@
   }
 
   .dhglogo {
-    padding-left: 2rem;
-    z-index: 1;
-    width: clamp(5%, 5rem, 5rem);
-    display: flex;
-    float: left;
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin: 0;
+    padding: 0;
   }
 }
