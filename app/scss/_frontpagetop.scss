@@ -74,13 +74,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .bannerlogo {
-    margin-top: -8;
-    margin-left: -8;
-    height: 40rem;
-    width: 100.4%;
-  }
-
   .banner div h2 {
     padding-top: 15rem;
     font-size: $font-xl;
@@ -88,20 +81,20 @@
 
   .logo2 {
     z-index: 1;
-    width: clamp(30%, 5rem, 5rem);
+    width: clamp(20%, 5rem, 5rem);
     padding-top: 5rem;
   }
 
   .medlembutton {
     position: absolute;
     margin: 0;
-    left: 20%;
+    left: 23%;
     bottom: 20%;
   }
 
   .instructorbutton {
     position: absolute;
-    right: 20%;
+    right: 23%;
     bottom: 20%;
   }
 }
