@@ -42,6 +42,8 @@
 
 .change {
   left: 0;
+  background-color: black;
+  opacity: 100%;
 }
 
 .burgermenu {
@@ -76,7 +78,13 @@
 }
 
 .nav-list {
-  text-align: center;
+  text-align: left;
+  line-height: 1.6;
+  margin-top: -30vh;
+
+  img {
+    margin-bottom: 5rem;
+  }
 }
 
 .nav-punkt {
@@ -86,9 +94,9 @@
 
 .nav-link {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 2.2rem;
   color: #e4f0f8;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 0.063rem;
   text-transform: uppercase;
   position: relative;
@@ -127,13 +135,43 @@
   .linksbar {
     display: none;
   }
+  .navcolor {
+    height: 8rem;
+  }
+  .dhglogo {
+    padding-top: 2rem;
+  }
+  .burgermenu {
+    top: 1.8125rem;
+    left: 1.25rem;
+  }
+  .navbar {
+    width: 25.75rem;
+    left: -25.75rem;
+  }
+  .change {
+    left: 0;
+  }
+
+  .nav-link {
+    font-size: 2.4rem;
+  }
+
+  .nav-list {
+    width: 100%;
+    text-align: left;
+  }
+  .nav-link {
+    font-size: 3rem;
+    line-height: 1.6;
+  }
 }
 
 /* webquery pc*/
 @media screen and (min-width: 1024px) {
   .navcolor {
     background-color: black;
-    height: 7rem;
+    height: 9rem;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -143,7 +181,7 @@
 
   .linksbar {
     text-align: center;
-    padding: 0 3rem;
+    padding: 0 2rem 0 0;
     cursor: pointer;
     display: flex;
     justify-content: space-around;
@@ -166,13 +204,17 @@
     text-decoration: none;
     z-index: 1;
   }
-
+  .linksbar .hlink {
+    padding: 1rem 2rem;
+  }
   .linksbar .hlink:hover {
     background-color: $clr-dark-blue;
+    transition: 0.5s ease-in-out;
   }
 
-  .current {
+  .linksbar .current {
     background-color: $clr-dark-blue;
+    padding: 1rem 1.5rem;
   }
 
   .linksbar {

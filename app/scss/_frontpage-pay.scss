@@ -70,7 +70,7 @@
   grid-template-columns: 1fr;
   justify-content: center;
   grid-gap: 2rem;
-  margin: 2rem;
+  margin: 3rem;
 
   &__container {
     box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.3);
@@ -226,6 +226,7 @@ footer {
 @media screen and (min-width: 768px) {
   .wrapper-grid-card {
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem;
     &__container {
       &__price {
         h2 {
@@ -239,6 +240,13 @@ footer {
           color: $clr-dark-blue;
           font-family: Ironstrike, sans-serif;
         }
+      }
+      &__button {
+        padding: 1.2rem 5rem;
+      }
+
+      &__list {
+        padding: 0 5rem;
       }
     }
   }
@@ -268,8 +276,9 @@ footer {
 
   .wrapper-grid-card {
     grid-template-columns: 1fr 1fr 1fr;
-    width: 90%;
+    width: 100rem;
     margin: 4rem auto;
+    grid-gap: 0;
 
     &__container {
       width: 90%;
@@ -292,6 +301,7 @@ footer {
 
   footer {
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 10rem !important;
   }
   .footer-bottom {
     grid-column: 1/4;

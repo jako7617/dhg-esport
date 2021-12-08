@@ -7,12 +7,18 @@
 
 .logo2 {
   z-index: 1;
-  width: clamp(50%, 15rem, 25rem);
+  width: 25rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.logo3 {
+  z-index: 1;
+  width: 12rem;
   margin: 0 auto;
   padding-top: 2rem;
 }
 
-.banner div {
+.banner-container {
   background-image: url(../../images/gamerbillede2.png);
   background-position: 50%;
   height: 100%;
@@ -45,8 +51,9 @@
 }
 
 .medlembutton:hover {
-  background-color: $clr-dark-blue;
-  color: white;
+  background-color: white;
+  color: $clr-dark-blue;
+  cursor: pointer;
 }
 
 .instructorbutton {
@@ -65,36 +72,47 @@
 }
 
 .instructorbutton:hover {
-  background-color: $clr-grey;
+  background-color: $clr-dark-blue;
   color: white;
+  cursor: pointer;
 }
 /* knapper slut */
 
 @media screen and (min-width: 768px) {
+  .logo2 {
+    width: 30rem;
+    padding-top: 5rem;
+  }
+  .banner div h2 {
+    color: $clr-white;
+    font-size: $font-xl;
+    font-style: italic;
+    text-align: center;
+    padding-top: 10rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .banner div h2 {
-    padding-top: 15rem;
-    font-size: $font-xl;
+  .banner-container {
+    h2 {
+      padding-top: 15rem !important;
+      font-size: $font-xl !important;
+    }
+    div {
+      display: flex;
+      grid-gap: 8rem;
+      margin: 0 auto;
+    }
   }
-
-  .logo2 {
-    z-index: 1;
-    width: clamp(20%, 5rem, 5rem);
-    padding-top: 5rem;
-  }
-
   .medlembutton {
-    position: absolute;
-    margin: 0;
-    left: 23%;
-    bottom: 20%;
+    padding: 2rem 7rem !important;
+    font-size: 2.8rem;
+    margin-right: 0;
+    margin-top: 10rem;
   }
-
   .instructorbutton {
-    position: absolute;
-    right: 23%;
-    bottom: 20%;
+    padding: 1.5rem 5rem !important;
+    margin: 10rem auto 5rem 0;
+    font-size: 2.8rem;
   }
 }
