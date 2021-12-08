@@ -16,6 +16,10 @@
   </head>
   <body>
     <!-- burgermenustart -->
+    <!-- burgermenustart -->
+
+    <!--navbar web-->
+
     <div class="navcolor">
       <img class="dhglogo" src="images/dhgpng.png" alt="" />
       <div class="burgerbox">
@@ -46,67 +50,88 @@
           </ul>
         </nav>
       </div>
+      <div>
+        <ul class="linksbar">
+          <li>
+            <a class="current" href="#">INSTRUKTØR</a>
+          </li>
+          <li>
+            <a class="hlink" href="#">NYHEDER</a>
+          </li>
+          <li>
+            <a class="hlink" href="#">TILMELDING</a>
+          </li>
+          <li>
+            <a class="hlink" href="#">OM OS</a>
+          </li>
+          <li>
+            <a class="hlink" href="#">KONTAKT</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <h2 class="flex flex-jc-c">KONTAKT OS!</h2>
-    <div class="contact-container">
-      <form action="/action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">Fornavn</label>
+    <div class="contact-bottom">
+      <div class="contact-container">
+        <h2 class="flex flex-jc-c">Send os en besked</h2>
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Fornavn</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Dit navn.."
+              />
+            </div>
           </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Dit navn.."
-            />
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Email</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Din email.."
+              />
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="lname">Email</label>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Besked</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Skriv din besked.."
+                style="height: 200px"
+              ></textarea>
+            </div>
           </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Din email.."
-            />
+          <div class="row">
+            <input type="submit" value="SEND" />
           </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="subject">Besked</label>
-          </div>
-          <div class="col-75">
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Skriv din besked.."
-              style="height: 200px"
-            ></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <input type="submit" value="SEND" />
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
 
-    <div class="instruct-contactinfo">
-      <h2 class="flex flex-jc-c">Kontaktinformationer</h2>
-      <p>
-        Email: Seniorformand@dhg.dk
+      <div class="instruct-contactinfo">
+        <h2 class="flex flex-jc-c">Kontaktinformationer</h2>
+        <p>
+          Email: Seniorformand@dhg.dk
 
-        <br /><br />
-        Adresse: Dalumskolen Demantsvej 30,<br />
-        5260 Odense S
-      </p>
+          <br /><br />
+          Adresse: Dalumskolen Demantsvej 30,<br />
+          5260 Odense S
+        </p>
+        <img class="maps" src="images/mapsdhg.png" alt="Maps til Dalumskolen" />
+      </div>
     </div>
-    <img class="maps" src="images/mapsdhg.png" alt="Maps til Dalumskolen" />
     <footer>
       <div class="footer-left">
         <h3>DHG FORENING</h3>

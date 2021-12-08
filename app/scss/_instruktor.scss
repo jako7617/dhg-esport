@@ -1,5 +1,6 @@
 .instruct-header {
   margin-bottom: 1.5rem;
+  padding-top: 8rem;
 }
 
 .instruct-wrapper1 {
@@ -23,6 +24,7 @@
     text-align: center;
     h2 {
       margin-top: 0.5rem;
+      font-size: 2.4rem;
     }
     p {
       font-family: Ironstrike, sans-serif;
@@ -120,6 +122,10 @@
   }
 }
 
+.contact-bottom h2 {
+  padding-top: 8rem;
+}
+
 input[type="text"],
 select,
 textarea {
@@ -194,6 +200,10 @@ input[type="submit"]:hover {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
+  .instruct-header {
+    margin-bottom: 5rem;
+  }
+
   .instruct-wrapper1 {
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -208,10 +218,12 @@ input[type="submit"]:hover {
           font-family: Ironstrike, sans-serif;
           color: $clr-dark-blue;
           margin-bottom: 1rem;
+          text-align: left;
         }
         h2 {
           margin-top: 0.5rem;
           font-size: 2.4rem;
+          text-align: left;
         }
         &__bread {
           text-align: left;
@@ -277,6 +289,9 @@ input[type="submit"]:hover {
     &__container {
       height: 25vh;
     }
+  }
+  .contact-container {
+    padding: 2rem 20%;
   }
 }
 
@@ -367,6 +382,14 @@ input[type="submit"]:hover {
     width: 65vw;
   }
 
+  .instruct-contactinfo {
+    padding: 2rem 1%;
+
+    h2 {
+      font-size: $font-l;
+    }
+  }
+
   .contact-bottom {
     display: grid;
     grid-template-columns: 32.5% 32.5%;
@@ -375,5 +398,15 @@ input[type="submit"]:hover {
   }
   .maps {
     width: 25vw;
+  }
+  .contact-container {
+    padding: 2rem 1%;
+
+    h2 {
+      font-size: $font-l;
+    }
+  }
+  footer {
+    padding: 0 17%;
   }
 }

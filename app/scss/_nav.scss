@@ -1,7 +1,7 @@
 .navcolor {
   display: block;
   background-color: black;
-  opacity: 80%;
+  opacity: 90%;
   height: 6rem;
   position: absolute;
   z-index: 100;
@@ -133,12 +133,12 @@
 @media screen and (min-width: 1024px) {
   .navcolor {
     background-color: black;
-    opacity: 80%;
     height: 7rem;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
   }
 
   .linksbar {
