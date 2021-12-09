@@ -55,21 +55,36 @@
 
 @media screen and (min-width: 768px) {
   .omos-intro {
-    width: 70%;
+    width: 70rem;
     margin: 0 auto;
+
+    h2 {
+      font-size: $font-xl;
+      padding-top: 12rem;
+    }
   }
 
   .omos-kontakt {
-    width: 70%;
+    width: 70rem;
+    margin: 0 auto;
+  }
+  #omos-flex {
+    width: 70rem;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .omos-intro {
+    width: 90rem;
+  }
+  .omos-kontakt {
+    width: 90rem;
+  }
   #omos-flex {
     display: flex;
-    width: 70%;
     margin: 0 auto;
+    width: 90rem;
   }
   .omos-img {
     width: clamp(10%, 40%, 45%);

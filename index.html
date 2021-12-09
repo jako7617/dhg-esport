@@ -20,7 +20,7 @@
     <!--navbar web-->
 
     <div class="navcolor">
-      <img class="dhglogo" src="images/dhgpng.png" alt="" />
+    <a href="/index.html" class="dhglogo"> <img class="dhglogo" src="images/dhgpng.png" alt="" /></a>
       <div class="burgerbox">
         <nav class="navbar">
           <div class="burgermenu">
@@ -31,7 +31,7 @@
 
           <!--navbar mobil-->
           <ul class="nav-list">
-            <img class="logo3 flex flex-jc-c" src="images/dhgpng.png" alt="" />
+            <a href="/index.html"><img class="logo3 flex flex-jc-c" src="images/dhgpng.png" alt="" /></a>
             <li class="nav-punkt">
               <a href="/index.html" class="nav-link">TILMELDING</a>
             </li>
@@ -75,8 +75,8 @@
       <div class="banner-container">
         <h2>VELKOMMEN TIL</h2>
         <img class="logo2 flex flex-jc-c" src="images/dhgpng.png" alt="" />
-       <div> <button class="medlembutton">BLIV MEDLEM</button>
-        <button class="instructorbutton">BLIV INSTRUKTØR</button></div>
+       <div><button onclick="location.href='#tilmeldingskort'" class="medlembutton">BLIV MEDLEM</button>
+        <button onclick="location.href='/instruktor.html'" class="instructorbutton">BLIV INSTRUKTØR</button></div>
       </div>
     </div>
 
@@ -99,7 +99,7 @@
         Vil du høre nærmere, så kontakt Nicolai Gynther på:
         <br />
         <br />
-        <b>seniorformand@dhg.dk</b>
+        <a href="mailto:seniorformand@dhg.dk"><b>seniorformand@dhg.dk</b></a>
       </p>
     </div>
 
@@ -166,8 +166,7 @@
 
       <div class="fp-logo-info"></div>
     </div>
-
-    <h2 class="pay-title flex flex-jc-c">TILMELDING</h2>
+<section id="tilmeldingskort">   <h2 class="pay-title flex flex-jc-c">TILMELDING</h2>
 
     <div class="wrapper-grid-card">
       <div class="wrapper-grid-card__container">
@@ -219,6 +218,8 @@
         <button class="wrapper-grid-card__container__button">MELD MIG</button>
       </div>
     </div>
+  </section>
+
     <footer>
       <div class="footer-left">
         <h3>DHG FORENING</h3>
@@ -227,19 +228,20 @@
           5260 Odense S
         </p>
 
-        <p><strong>Seniorformand@dhg.dk</strong></p>
-        <img class="footer-left__logo" src="images/dhgpng.png" alt="DHG Logo" />
+        <p><strong><a href="mailto:seniorformand@dhg.dk">seniorformand@dhg.dk</a></strong></p>
+        <a href="/index.html"
+        > <img class="footer-left__logo" src="images/dhgpng.png" alt="DHG Logo" /></a>
 
         <div class="footer-left__socials">
-          <a href="#"
+          <a href="https://www.facebook.com/dhgesport/" target="_blank"
             ><img
               src="images/icons/iconmonstr-facebook.svg"
               alt="Facebook icon" /></a
-          ><a href="#"
+          ><a href="#" target="_blank"
             ><img
               src="images/icons/iconmonstr-instagram.svg"
               alt="Instagram icon" /></a
-          ><a href="#"
+          ><a href="https://discord.gg/8FF66h82EX" target="_blank"
             ><img src="images/icons/iconmonstr-discord.svg" alt="Discord icon"
           /></a>
         </div>
@@ -248,12 +250,12 @@
         <li>
           <h3>DHG ESPORT</h3>
           <ul>
-            <li><a href="">Nyheder</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Om Os</a></li>
-            <li><a href="">Kontakt</a></li>
-            <li><a href="">Bliv træner</a></li>
-            <li><a href="">Tilmelding</a></li>
+            <li><a href="/nyheder.html">Nyheder</a></li>
+            <li><a href="/nyheder.html">Events</a></li>
+            <li><a href="/omos.html">Om Os</a></li>
+            <li><a href="/kontakt.html">Kontakt</a></li>
+            <li><a href="/instruktor.html">Bliv træner</a></li>
+            <li><a href="/index.html#tilmeldingskort">Tilmelding</a></li>
           </ul>
         </li>
       </ul>
