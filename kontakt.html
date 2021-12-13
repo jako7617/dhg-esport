@@ -85,48 +85,58 @@
     <div class="contact-bottom">
       <div class="contact-container">
         <h2 class="flex flex-jc-c">Send os en besked</h2>
-        <form action="/action_page.php">
+        <form action="kontaktform.php" method="post">
           <div class="row">
             <div class="col-25">
-              <label for="fname">Fornavn</label>
+              <label for="name">Fornavn</label>
             </div>
             <div class="col-75">
               <input
                 type="text"
                 id="fname"
-                name="firstname"
+                name="name"
                 placeholder="Dit navn.."
               />
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="lname">Email</label>
+              <label for="emne">Emne</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="email" name="subject" placeholder="Emne" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
             </div>
             <div class="col-75">
               <input
                 type="text"
-                id="lname"
-                name="lastname"
+                id="email"
+                name="mail"
                 placeholder="Din email.."
               />
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="subject">Besked</label>
+              <label for="text">Besked</label>
             </div>
             <div class="col-75">
               <textarea
-                id="subject"
-                name="subject"
+                id="text"
+                name="message"
                 placeholder="Skriv din besked.."
                 style="height: 200px"
               ></textarea>
             </div>
           </div>
           <div class="row">
-            <input type="submit" value="SEND" />
+            <button class="submitbtn" type="submit" name="submit">
+              Send mail
+            </button>
           </div>
         </form>
       </div>

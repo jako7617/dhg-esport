@@ -193,6 +193,20 @@ input[type="submit"]:hover {
     margin: 20px 0;
   }
 }
+.submitbtn {
+  padding: 1.5rem 7rem;
+  text-align: center;
+  border: none;
+  font-size: $font-sm;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: $clr-dark-blue;
+  color: $clr-white;
+  font-family: Ironstrike, sans-serif;
+  white-space: nowrap;
+  margin: 3rem auto -5rem auto;
+  display: block;
+}
 .maps {
   width: 70vw;
   margin-bottom: 2rem;
