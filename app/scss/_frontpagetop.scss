@@ -54,6 +54,7 @@
   background-color: white;
   color: $clr-dark-blue;
   cursor: pointer;
+  transition: $transition-200ms;
 }
 
 .instructorbutton {
@@ -74,6 +75,7 @@
 .instructorbutton:hover {
   background-color: $clr-dark-blue;
   color: white;
+  transition: $transition-200ms;
   cursor: pointer;
 }
 /* knapper slut */

@@ -26,6 +26,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover {
+  opacity: 0.5;
+  transition: $transition-200ms;
+}
 
 p {
   font-size: $font-xs-fallback;

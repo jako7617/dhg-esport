@@ -186,7 +186,10 @@ footer {
     width: 15rem;
     margin: 1.5rem 0;
   }
-
+  &__logo:hover {
+    opacity: 0.5;
+    transition: $transition-200ms;
+  }
   &__socials {
     text-align: center;
     a {
@@ -195,6 +198,10 @@ footer {
     img {
       width: 4rem;
       margin: 2rem 1rem;
+    }
+    :hover {
+      transition: $transition-200ms;
+      opacity: 0.5;
     }
   }
 }

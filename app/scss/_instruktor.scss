@@ -206,7 +206,16 @@ input[type="submit"]:hover {
   white-space: nowrap;
   margin: 3rem auto -5rem auto;
   display: block;
+  cursor: pointer;
 }
+.submitbtn:hover {
+  background-color: white;
+  color: $clr-dark-blue;
+  padding: 1.2rem 6.7rem;
+  border: 3px solid $clr-dark-blue;
+  transition: $transition-200ms;
+}
+
 .maps {
   width: 70vw;
   margin-bottom: 2rem;

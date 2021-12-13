@@ -35,22 +35,26 @@
 }
 
 .omos-button {
-  padding: 1.2rem 7rem;
+  padding: 1.5rem 7rem;
   text-align: center;
   border: none;
   font-size: $font-sm;
   font-weight: 700;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: $clr-dark-blue;
   color: $clr-white;
   font-family: Ironstrike, sans-serif;
   white-space: nowrap;
+  margin: 3rem auto -5rem auto;
   display: block;
-  margin: 3rem auto;
+  cursor: pointer;
 }
 .omos-button:hover {
-  background-color: #161b91;
-  color: white;
+  background-color: white;
+  color: $clr-dark-blue;
+  padding: 1.2rem 6.7rem;
+  border: 3px solid $clr-dark-blue;
+  transition: $transition-200ms;
 }
 
 @media screen and (min-width: 768px) {
