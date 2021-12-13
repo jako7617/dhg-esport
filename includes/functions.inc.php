@@ -64,7 +64,7 @@ function uidExists($conn, $name, $email) {
 }
 
 function createUser($conn, $name, $email, $pwd) {
-    $sql = "INSERT INTO users (usersName, usersEmail, UsersPwd) VALUES(?, ?, ?, ?);";
+    $sql = "INSERT INTO users (usersName, usersEmail, usersPwd) VALUES(?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn); 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../signup.php?error=stmtfailed");
@@ -95,7 +95,7 @@ function emptyInputSignup($name, $pwd) {
 }
 
 function loginUser($conn, $name, $pwd) {
-    $uidExists = uidExists($conn, $name, $name)
+    $uidExists = uidExists($conn, $email, $email)
 
     if ($uidExists === false) {
         header("location: ../login.php?error=wrongLogin");
@@ -111,8 +111,7 @@ function loginUser($conn, $name, $pwd) {
     }
     else if ($checkPwd === true) {
         session_start();
-        $_SESSION["userid"] = $uidExists["usersId"];
-        $_SESSION["useruid"] = $uidExists["usersUid"];
+        $_SESSION["email"] = $uidExists["usersEmail"];
         header("location: ../index.php");     
         exit();   
     }
