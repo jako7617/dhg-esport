@@ -15,5 +15,33 @@
 
 </div>
 
+<?php
+    if (isset($_GET["error"])) {
+        if ($_GET["error"] == "emptyinput") {
+            echo "<p>Udfyld alle felter!</p>";
+        }
+    
+    else if ($_GET["error"] == "invaliduid") {
+        echo "<p>Skriv fulde navn</p>";
+    }
+    
+    else if ($_GET["error"] == "invalidemail") {
+        echo "<p>Skriv gyldig email</p>";
+    }
+    
+    else if ($_GET["error"] == "passwordsdontmatch") {
+        echo "<p>Passwords passer ikke</p>";
+    }
+    
+    else if ($_GET["error"] == "stmtfailed") {
+        echo "<p>Noget gik galt, prøv igen</p>";
+    }
+
+    else if ($_GET["error"] == "none") {
+        echo "<p>Du er nu tilmeldt!</p>";
+    }
+}
+?>
 
 </section>
+
