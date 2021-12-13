@@ -4,15 +4,32 @@ if (isset($_POST["submit"])) {
 // du kan sige echo("det virker"); for at tjekke
 
     $name = $_POST["name"];
-    $name = $_POST["email"];
-    $name = $_POST["pwd"];
-    $name = $_POST["pwdrepeat"];
+    $email = $_POST["email"];
+    $pwd = $_POST["pwd"];
+    $pwdRepeat = $_POST["pwdrepeat"];
 
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
+
+
+    if (emptyInputSignup($name, $email, $pwd, $pwdRepeat) !== false) {
+        header("location: ../signup.php?error=emptyinput");     
+        exit();   
+    }
+    if (invalidEmail($email) !== false) {
+        header("location: ../signup.php?error=invalidemail");     
+        exit();   
+    }
+    if (pwdMatch($pwd, $pwdRepeat) !== false) {
+        header("location: ../signup.php?error=passwordsdontmatch");     
+        exit();   
+    }
+
+    createUser($conn, $name, $email, $pwd);
 
 }
 
 else {
     header("location: ../signup.php");
+    exit();
 }
