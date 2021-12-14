@@ -48,8 +48,8 @@
   &__container {
     height: 30vh;
     &__bg {
-      background-image: url(../../images/instruktor2.jpg);
-      background-position: 0;
+      background-image: url(../../images/instruktor2.png);
+      background-position: 30%;
       background-repeat: no-repeat;
       background-size: cover;
       height: 100%;
@@ -270,7 +270,6 @@ input[type="submit"]:hover {
       grid-column: 2/3;
       grid-row: 1/2;
       &__bg {
-        background-image: url(../../images/instruktor2.jpg);
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -361,7 +360,6 @@ input[type="submit"]:hover {
       grid-column: 2/3;
       grid-row: 1/2;
       &__bg {
-        background-image: url(../../images/instruktor2.jpg);
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
