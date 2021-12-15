@@ -5,7 +5,7 @@
 <div class="signup-form-form">
 <form action="includes/login.inc.php" method="post">
 
-    <input type="text" name="uid" placeholder="Full Name/Email...">
+    <input type="email" name="email" placeholder="Email...">
     <input type="password" name="pwd" placeholder="Password...">
     <button type="submit" name="submit">Log ind</button>
 
@@ -21,6 +21,7 @@
     else if ($_GET["error"] == "wrongLogin") {
         echo "<p>Forkert login information</p>";
     }
+    
     
 }
 ?>

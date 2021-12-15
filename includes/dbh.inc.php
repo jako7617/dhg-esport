@@ -6,7 +6,7 @@ $dBFullName = "root";
 $dBPassword = "";
 $dBName = "dhgdata";
 
-$conn = mysqli_connect($serverName, $dBFullName, $dBPassword, $dBPassword);
+$conn = new mysqli ($serverName, $dBFullName, $dBPassword, $dBName);
 
 if (!$conn) {
     die("Connection fejlede: " . mysqli_connect_error());

@@ -6,7 +6,7 @@
 <form action="includes/signup.inc.php" method="post">
 
     <input type="text" name="name" placeholder="Full name...">
-    <input type="text" name="email" placeholder="Email...">
+    <input type="email" name="email" placeholder="Email...">
     <input type="password" name="pwd" placeholder="Password...">
     <input type="password" name="pwdrepeat" placeholder="Repeat password...">
     <button type="submit" name="submit">Opret profilen</button>
@@ -21,7 +21,7 @@
             echo "<p>Udfyld alle felter!</p>";
         }
     
-    else if ($_GET["error"] == "invaliduid") {
+    else if ($_GET["error"] == "invalidname") {
         echo "<p>Skriv fulde navn</p>";
     }
     
